@@ -24,7 +24,7 @@ playing()
 			"params": { "playerid": '$plid',
 				"properties": ["speed"] }
 		}' $url \
-			| grep speed | grep -vq speed..0 && return 0
+		| grep speed | grep -vq speed..0 && return 0
 	fi
 	return 1
 }
